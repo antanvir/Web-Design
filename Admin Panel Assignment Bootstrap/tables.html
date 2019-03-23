@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ADMIN PANEL</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="admin.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body >
+  	
+	<nav class="navbar navbar-expand-sm bg-dark sticky-top navbar-dark text-white" role="navigation">
+		<div class="container-fluid">
+
+			
+			<button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse"  data-target=".myNavbar">
+				<span class="navbar-toggler-icon"></span>				
+			</button>
+			<a class="navbar-brand" href="#"><img src="admin-icon-resized.png" alt="LOGO" style="padding-right: 10px;"> </a>
+
+
+			<div class="collapse navbar-collapse myNavbar">
+
+			<ul class="nav navbar-nav" style="padding-right: 20px;">
+
+			  	<li class="nav-item"><a class="nav-link"  href="home.html">HOME</a></li>
+				<li class="nav-item"><a class="nav-link"  href="about.html">ABOUT</a></li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="email.html">Email</a></li>
+						<li><a class="dropdown-item" href="phone.html">Phone</a></li>
+					</ul>
+				</li>
+			
+		      	<li class="nav-item dropdown d-sm-block d-md-none">
+		        	<a  href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> SIDEBAR MENU </a>
+
+		        	<ul class="dropdown-menu">
+		        		<a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard </a>
+						<ul class="dropdown-menu">
+							
+							<li><a class="dropdown-item" href="reports.html">Reports</a></li>
+							<li><a class="dropdown-item" href="tables.html">Tables</a></li>
+						</ul>
+
+						<a class="dropdown-item" href="profile.html">Profile</a>
+		            	<a class="dropdown-item" href="task.html">Tasks</a>
+		            	<a class="dropdown-item" href="#">Messages<span class="badge badge-pill badge-primary ml-2">2</span></a>
+		            	<a class="dropdown-item" href="help.html">Help</a>
+		            
+		        	</ul>
+		      	</li>
+			 </ul>
+
+			<form class="form-inline"> 	
+				<input type="text" class="form-control mr-sm-2" placeholder="Search here...">		
+			  	<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>	
+			</form>
+			</div> 
+		</div>	
+	</nav>
+		
+	<div class="row" id="body-row">
+	   
+	    <div id="sidebar-container" class="col-sm-2  d-none d-md-block">
+	   
+        	<ul class="list-group">
+           
+            	
+	            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+	                <div class="d-flex w-100 justify-content-start align-items-center">    
+	                	<span class="menu-collapsed">Dashboard &nbsp; &#9661;</span>
+	                </div>
+	            </a>
+	           
+	            <div id='submenu1' class="collapse sidebar-submenu">
+	                
+	                <a href="reports.html" class="list-group-item list-group-item-action bg-dark text-white">
+	                    <span class="menu-collapsed">Reports</span>
+	                </a>
+	                <a href="tables.html" class="list-group-item list-group-item-action bg-dark text-white">
+	                    <span class="menu-collapsed">Tables</span>
+	                </a>
+	            </div> 
+
+	            <a href="profile.html" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">   
+	                    <span class="menu-collapsed">Profile</span>    
+	                </div>
+	            </a>
+
+	            <a href="task.html" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">      
+	                    <span class="menu-collapsed">Tasks</span>    
+	                </div>
+	            </a>
+       
+	            <a href="#" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">   
+	                    <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">2</span></span>
+	                </div>
+	            </a>
+                     
+	            <a href="help.html" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">    
+	                	<span class="menu-collapsed">Help</span>
+	                </div>
+	            </a>
+           
+        	</ul>
+    	</div>
+    	
+    	<div class="col-sm-10 main-container">
+    	<br>
+    	<h4 class="text-center"> Here is a sample responsive table.</h4>
+    	<br>
+	    <div class="table-responsive">
+	    	<table class="table table-striped table-hover">
+	    	<caption class="text-center text-primary">List of our branches across the city</caption>
+	    	<thead class="thead-dark">
+	      		<tr>
+	      			<th>#</th>
+			        <th>Branch</th>
+			        <th>Manager</th>
+			        <th>Email</th>
+	      		</tr>
+	    	</thead>
+	    	<tbody>
+			    <tr>
+			    	<td>1</td>
+			    	<td>Banasree</td>
+			        <td>Rezowan</td>
+			        <td>rez1@hotmail.com</td>
+			    </tr>
+			    <tr>
+			    	<td>2</td>
+			        <td>Khilgaon</td>
+			        <td>Akib</td>
+			        <td>akib@yahoo.com</td>
+			    </tr>
+			    <tr>
+			    	<td>3</td>
+			        <td>Mirpur</td>
+			        <td>Rakib</td>
+			        <td>rakib_vai@rocketmail.com</td>
+			    </tr>
+			    <tr>
+			    	<td>4</td>
+			        <td>Dhanmondi</td>
+			        <td>Shuborno</td>
+			        <td>its_shuborno@gmail.com</td>
+			    </tr>
+			    <tr>
+			    	<td>5</td>
+			        <td>Shantinagar</td>
+			        <td>Nafsan</td>
+			        <td>sinafsan@gmail.com</td>
+			    </tr>
+	    	</tbody>
+	  		</table>
+	  	</div>
+		</div> 
+    </div>
+
+</body>
+
+</html>
+

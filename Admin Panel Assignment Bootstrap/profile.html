@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ADMIN PANEL</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="admin.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body >
+  	
+	<nav class="navbar navbar-expand-sm bg-dark sticky-top navbar-dark" role="navigation">
+		<div class="container-fluid">
+
+			
+			<button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse"  data-target=".myNavbar">
+				<span class="navbar-toggler-icon"></span>				
+			</button>
+			<a class="navbar-brand" href="#"><img src="admin-icon-resized.png" alt="LOGO" style="padding-right: 10px;"> </a>
+
+
+			<div class="collapse navbar-collapse myNavbar">
+
+			<ul class="nav navbar-nav" style="padding-right: 20px;">
+
+			  	<li class="nav-item"><a class="nav-link"  href="home.html">HOME</a></li>
+				<li class="nav-item"><a class="nav-link"  href="about.html">ABOUT</a></li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="email.html">Email</a></li>
+						<li><a class="dropdown-item" href="phone.html">Phone</a></li>
+					</ul>
+				</li>
+			
+		      	<li class="nav-item dropdown d-sm-block d-md-none">
+		        	<a  href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> SIDEBAR MENU </a>
+
+		        	<ul class="dropdown-menu">
+		        		<a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard </a>
+						<ul class="dropdown-menu">
+							
+							<li><a class="dropdown-item" href="reports.html">Reports</a></li>
+							<li><a class="dropdown-item" href="tables.html">Tables</a></li>
+						</ul>
+
+						<a class="dropdown-item" href="profile.html">Profile</a>
+		            	<a class="dropdown-item" href="task.html">Tasks</a>
+		            	<a class="dropdown-item" href="message.html">Messages<span class="badge badge-pill badge-primary ml-2">2</span></a>
+		            	<a class="dropdown-item" href="help.html">Help</a>
+		            
+		        	</ul>
+		      	</li> 
+			 </ul>
+
+			<form class="form-inline"> 	
+				<input type="text" class="form-control mr-sm-2" placeholder="Search here...">		
+			  	<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>	
+			</form>
+			</div>
+		</div>	
+	</nav>
+		
+	<div class="row" id="body-row">
+	   
+	    <div id="sidebar-container" class="col-sm-2  d-none d-md-block">
+	  
+        
+        	<ul class="list-group">
+           
+	            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+	                <div class="d-flex w-100 justify-content-start align-items-center">    
+	                	<span class="menu-collapsed">Dashboard &nbsp; &#9661;</span>
+	                </div>
+	            </a>
+	            <div id='submenu1' class="collapse sidebar-submenu">
+	               
+	                <a href="reports.html" class="list-group-item list-group-item-action bg-dark text-white">
+	                    <span class="menu-collapsed">Reports</span>
+	                </a>
+	                <a href="tables.html" class="list-group-item list-group-item-action bg-dark text-white">
+	                    <span class="menu-collapsed">Tables</span>
+	                </a>
+	            </div> 
+
+	            <a href="profile.html" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">   
+	                    <span class="menu-collapsed">Profile</span>    
+	                </div>
+	            </a>
+
+	            <a href="task.html" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">      
+	                    <span class="menu-collapsed">Tasks</span>    
+	                </div>
+	            </a>
+       
+	            <a href="message.html" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">   
+	                    <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">2</span></span>
+	                </div>
+	            </a>
+                     
+	            <a href="help.html" class="bg-dark list-group-item list-group-item-action">
+	                <div class="d-flex w-100 justify-content-start align-items-center">    
+	                	<span class="menu-collapsed">Help</span>
+	                </div>
+	            </a>
+           </ul>
+    	</div>
+    	
+    	<div class="col-sm-10 main-container" style="background-color: white;">
+    		<div class="row  justify-content-center bg-info" style="padding-left: 20px; padding-top: 30px;">
+    			<div class="image_container">
+    				
+					<img src="me.jpg" alt="A.N. TANVIR" class="rounded-circle" width="200" height="200">
+				</div>
+					
+			</div>
+    			
+
+			<div class="row justify-content-center" style="padding-left: 20px; padding-top: 30px;">
+				<div class="profile-name justify-content-center">
+						<h4 class="justify-content-center">Ammar Nomany Tanvir</h4>
+						<h6 style="text-align: center;">Administrator</h6>
+				</div>
+				
+			</div>
+				
+			<div class="row justify-content-center" style="padding-left: 20px;">
+				<div></div>
+					<button type="button" class="btn btn-success btn-sm mr-5 mr-sm-5">Follow</button>
+					<button type="button" class="btn btn-danger btn-sm">Message</button>
+				</div>
+				
+				
+    		</div>
+    		
+		</div> 
+
+    </div>
+
+
+
+</body>
+
+</html>
+
