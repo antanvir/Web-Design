@@ -1,0 +1,270 @@
+body {
+	background-color: white;
+}
+
+#page {
+	width: 780px;
+	margin: 0px auto;
+}
+
+#banner {
+	width: 100%;
+	height: 125px;
+	background-image: url("images//Online-casino.jpg");
+}
+
+#TopBar {
+	width: 100%;
+	height: 20px;
+	background-image: url("images//topbar.gif");
+	background-repeat: repeat;
+}
+
+#contents {
+	width: 100%;
+	height: 800px;
+	background-color: rgb(0, 0, 102);  /* Color Marker */
+}
+
+#left {
+	float: left;
+	/*width: 125px;*/
+	width: 16.03%;
+	height: 750px;
+
+	margin: 8px;
+	/*background-color: skyblue;*/
+}
+
+#LeftMenu_1 {
+
+	width: 95%;
+	height: 170px;
+
+	background-image: url("images//menubg.jpg");
+	background-repeat: repeat;
+
+	padding-top: 8px; 
+	border: 5px solid rgb(0, 102, 255);
+}
+
+.MenuButtonTitle {
+	width: 100%;
+	height: 18px;
+
+	background-image: url("images//menubutton1.jpg");
+
+	font-size: 12px;
+	color: white;
+	text-align: center;
+
+}
+
+.MenuButton {
+	position: relative;
+
+	width: 100%;
+	height: 14px;
+
+	background-image: url("images//menu2button.jpg");
+
+	font-size: 12px;
+	color: white;
+	
+
+	margin: 8px 0px;
+}
+
+.menuText {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+	left: 20px;
+	top: 0px;
+}
+
+#LeftMenu_2 {
+	width: 95%;
+	height: 255px;
+
+	background-image: url("images//menubg2.jpg");
+	background-repeat: repeat;
+
+	padding-top: 8px;
+	margin-top: 8px;
+	border: 5px solid rgb(0, 102, 255);
+}
+
+.Bonus {
+	position: relative;
+
+	width: 100%;
+	height: 126px;
+
+	margin-top: 15px;
+	background-image: url("images//genericaddr.jpg");
+	
+}
+
+.playnow {
+	position: absolute;
+
+	width: 100%;
+	height: 20px;
+	bottom: 5px;
+	left: 18px;
+
+	background-image: url("images//playnow.jpg");
+	background-repeat: no-repeat;
+}
+
+#middle {
+	float: left;
+	/*width: 500px;*/
+	width: 64.11%;
+	height: 750px;
+	
+}
+
+.contents_middle {
+	width: 100%
+	height: 130px;
+
+	background-color: red;
+	margin: 5px;
+}
+
+.InlineBonus {
+	position: relative;
+
+	float: left;
+	width: 120px;
+	height: 126px;
+
+	background-image: url("images//genericaddr.jpg");
+	
+	border: 5px solid red;
+	margin-bottom: 18px;
+}
+
+h3 {
+	color: yellow;
+	text-align: center;
+}
+
+.description {
+	float: left;
+	width: 350px;
+	height: 126px;
+
+	text-align: justify;
+	color: white;
+	font-size: 12px;
+
+	background-color: red;
+	
+	border: 5px solid red;
+	margin-bottom: 18px;
+}
+
+#right {
+	float: left;
+	/*width: 125px;*/
+	width: 16.03%;
+	height: 750px;
+
+	margin: 6px;
+}
+
+#downloadNow {
+	position: relative;
+
+	width: 100%;
+	height: 185px;
+
+	background-image: url("images//downloadbg.jpg");
+	background-repeat: repeat;
+	
+	margin-bottom: 10px;
+	
+}
+#downloadTitle {
+	width: 100%;
+	height: 30px;
+
+	background-image: url("images//downloadbg.gif");
+	background-repeat: repeat;
+    
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: white;
+	font-size: 16px;	
+}
+
+#downloadText {
+	color: white;
+	text-align: justify;
+	font-size: 13px;
+
+	padding: 4px;
+}
+
+#downloadButton {
+	position: absolute;
+
+	width: 90%;
+	height: 22px;
+	bottom: 10px;
+	left: 5px;
+
+	background-image: url("images//downloadrevised.gif");
+	
+}
+
+#BottomBar {
+	clear: both;
+	width: 780px;
+	height: 20px;
+	background-image: url("images//btmbar.gif");
+	background-repeat: repeat;
+}
+
+#footer {
+	width: 780px;
+	height: 60px;
+	background-color: rgb(0, 0, 102);
+
+	margin-bottom: 5px;
+}
+
+#footer_menu, #copyright {
+	text-align: center;
+	color: white;
+	font-size: 10px;
+}
+
+p {
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: white;
+}    
+a:visited {
+	color: white;
+} 
+a:hover {
+	color: lightgray;
+}  
+a:active {
+	color: yellow;
+}  
+h3:hover {
+	color: green;
+}
